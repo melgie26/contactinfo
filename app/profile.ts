@@ -12,5 +12,5 @@ export const profile = {
   bio: "Building stronger connections across the fire service, organized labor, and the communities we serve.",
   headshot: "/matt-headshot.png",
   vcard: "/matt-elgie.vcf",
-  formEndpoint: "PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE",
+  formEndpoint: "https://script.google.com/macros/s/AKfycbyKBTHHK58H3yPIZufwN8xLG2jG85322Aw3Wt06a5EyKN60zDx_meSOhUse7z7fj-w9/exec",
 };

@@ -1,5 +1,5 @@
 // Paste the deployed Google Apps Script Web App URL here when it is ready.
-const FORM_ENDPOINT = "PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbyKBTHHK58H3yPIZufwN8xLG2jG85322Aw3Wt06a5EyKN60zDx_meSOhUse7z7fj-w9/exec";
 const params = new URLSearchParams(location.search);
 const eventName = params.get("event") || "";
 const source = params.get("source") || "direct";
