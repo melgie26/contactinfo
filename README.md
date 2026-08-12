@@ -40,6 +40,10 @@ npm run build
 
 GitHub Actions runs the same check for pushes and pull requests.
 
+## GitHub Pages
+
+The public static edition lives in `docs/` and deploys through `.github/workflows/pages.yml`. In repository **Settings → Pages**, set **Source** to **GitHub Actions** once. The published address will be `https://melgie26.github.io/contactinfo/`.
+
 ## Repository safety
 
 - Never commit notification email addresses, credentials, access tokens, or Apps Script deployment secrets.

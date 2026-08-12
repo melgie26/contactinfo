@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#174d3c">
+  <title>Matt Elgie | Let’s Connect</title>
+  <meta name="description" content="Save Matt’s contact and share yours in seconds.">
+  <meta property="og:title" content="Matt Elgie | Let’s Connect">
+  <meta property="og:description" content="Save Matt’s contact and share yours in seconds.">
+  <meta property="og:image" content="https://melgie26.github.io/contactinfo/og.png">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <section class="card" aria-label="Matt Elgie digital business card">
+      <div class="identity">
+        <div class="portrait-wrap"><img class="portrait" src="matt-headshot.png" alt="Matt Elgie headshot"><span class="available" title="Open to connecting"></span></div>
+        <p class="eyebrow">Digital introduction</p>
+        <h1>Matt Elgie</h1>
+        <p class="role">President <span>·</span> Airdrie Professional Firefighters Association</p>
+        <p class="bio">Building stronger connections across the fire service, organized labor, and the communities we serve.</p>
+        <p id="context" class="context" hidden></p>
+        <a class="primary save" href="matt-elgie.vcf" download="Matt-Elgie.vcf"><span class="button-icon">+</span> Save Matt’s contact</a>
+        <nav class="links" aria-label="Matt's professional links">
+          <a href="tel:+14036194908">Call</a><a href="mailto:matt.elgie@airdriefirefighters.com">Email</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.airdriefirefighters.com" target="_blank" rel="noreferrer">Website</a>
+        </nav>
+      </div>
+      <div class="exchange">
+        <section id="form-view">
+          <p class="eyebrow">The other half of the handshake</p><h2>Let’s stay connected.</h2>
+          <p class="intro">Send me your name and mobile—everything else is optional.</p>
+          <form id="contact-form" autocomplete="on">
+            <div class="field"><label for="fullName">Your name</label><input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="First and last name" required></div>
+            <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(555) 555-1234" required></div>
+            <button id="optional-toggle" class="optional-toggle" type="button" aria-expanded="false"><span>Add email, organization or a note</span><span>+</span></button>
+            <div id="optional-fields" class="optional-fields" hidden>
+              <div class="field"><label for="email">Email <span>Optional</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+              <div class="split">
+                <div class="field"><label for="organization">Organization <span>Optional</span></label><input id="organization" name="organization" type="text" autocomplete="organization" placeholder="Company or local"></div>
+                <div class="field"><label for="title">Title <span>Optional</span></label><input id="title" name="title" type="text" autocomplete="organization-title" placeholder="Your role"></div>
+              </div>
+              <div class="field"><label for="notes">Note <span>Optional</span></label><textarea id="notes" name="notes" rows="3" placeholder="A quick reminder of where we met"></textarea></div>
+            </div>
+            <p id="error" class="error" role="alert" hidden></p>
+            <button id="submit" class="primary" type="submit">Send my contact <span>→</span></button>
+          </form>
+          <div class="divider"><span>or</span></div>
+          <a id="sms" class="sms" href="sms:+14036194908">Text me instead <span>↗</span></a>
+          <p class="privacy">Your details go directly to Matt and are never shared. Include an email to receive one brief acknowledgment.</p>
+        </section>
+        <section id="success-view" class="success" hidden role="status" aria-live="polite">
+          <div class="check">✓</div><p class="eyebrow">You’re all set</p><h2 id="thanks">Thanks.</h2>
+          <p>Your details are on their way to Matt. Looking forward to staying connected.</p>
+          <a class="secondary" href="matt-elgie.vcf" download="Matt-Elgie.vcf">Save Matt’s contact</a>
+          <button id="send-another" class="text-button" type="button">Send another</button>
+        </section>
+      </div>
+    </section>
+    <footer>Made for real-world connections.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
