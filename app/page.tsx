@@ -115,16 +115,20 @@ export default function Home() {
                   <label htmlFor="phone">Mobile number</label>
                   <input id="phone" name="phone" type="tel" inputMode="tel" autoComplete="tel" placeholder="(555) 555-1234" required />
                 </div>
+                <div className="field">
+                  <label htmlFor="email">Email <span>Optional</span></label>
+                  <input id="email" name="email" type="email" autoComplete="email" placeholder="you@example.com" />
+                </div>
+                <div className="field">
+                  <label htmlFor="notes">Note <span>Optional</span></label>
+                  <textarea id="notes" name="notes" rows={3} placeholder="A quick reminder of where we met" />
+                </div>
 
                 <button className="optional-toggle" type="button" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>
-                  <span>{expanded ? "Hide" : "Add"} email, organization or a note</span><span>{expanded ? "−" : "+"}</span>
+                  <span>{expanded ? "Hide" : "Add"} organization or title</span><span>{expanded ? "−" : "+"}</span>
                 </button>
 
                 <div className={`optional-fields ${expanded ? "open" : ""}`} aria-hidden={!expanded}>
-                  <div className="field">
-                    <label htmlFor="email">Email <span>Optional</span></label>
-                    <input id="email" name="email" type="email" autoComplete="email" placeholder="you@example.com" tabIndex={expanded ? 0 : -1} />
-                  </div>
                   <div className="split">
                     <div className="field">
                       <label htmlFor="organization">Organization <span>Optional</span></label>
@@ -134,10 +138,6 @@ export default function Home() {
                       <label htmlFor="title">Title <span>Optional</span></label>
                       <input id="title" name="title" type="text" autoComplete="organization-title" placeholder="Your role" tabIndex={expanded ? 0 : -1} />
                     </div>
-                  </div>
-                  <div className="field">
-                    <label htmlFor="notes">Note <span>Optional</span></label>
-                    <textarea id="notes" name="notes" rows={3} placeholder="A quick reminder of where we met" tabIndex={expanded ? 0 : -1} />
                   </div>
                 </div>
 

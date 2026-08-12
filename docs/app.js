@@ -18,7 +18,7 @@ toggle.addEventListener("click", () => {
   optional.hidden = !open;
   optional.classList.toggle("open", open);
   toggle.setAttribute("aria-expanded", String(open));
-  toggle.children[0].textContent = `${open ? "Hide" : "Add"} email, organization or a note`;
+  toggle.children[0].textContent = `${open ? "Hide" : "Add"} organization or title`;
   toggle.children[1].textContent = open ? "−" : "+";
 });
 
