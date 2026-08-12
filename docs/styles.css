@@ -46,9 +46,7 @@ textarea { padding-top:14px; resize:vertical; }
 input::placeholder,textarea::placeholder { color:#99a29e; }
 input:focus,textarea:focus { background:#fff; border-color:#4a7d6c; box-shadow:0 0 0 3px rgba(42,104,82,.12); }
 .optional-toggle { width:100%; border:0; border-top:1px solid var(--line); background:none; padding:16px 2px; color:var(--muted); display:flex; justify-content:space-between; cursor:pointer; font-size:13px; }
-.optional-fields { display:grid; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .32s ease,opacity .25s; }
-.optional-fields>* { overflow:hidden; }
-.optional-fields.open { grid-template-rows:1fr; opacity:1; }
+.optional-fields { display:block; }
 .split { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
 .error { color:#9b302b; font-size:13px; margin:0 0 12px; }
 .divider { display:flex; align-items:center; gap:12px; color:#99a29e; font-size:11px; margin:14px 0; }
