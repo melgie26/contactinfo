@@ -55,6 +55,8 @@ input:focus,textarea:focus { background:#fff; border-color:#4a7d6c; box-shadow:0
 .divider { display:flex; align-items:center; gap:12px; color:#99a29e; font-size:11px; margin:14px 0; }
 .divider:before,.divider:after { content:""; height:1px; background:var(--line); flex:1; }
 .sms { display:flex; justify-content:center; gap:8px; text-decoration:none; color:var(--green); font-size:14px; font-weight:650; padding:7px; }
+.sms-primary { margin-bottom:0; }
+.form-divider { margin:18px 0 22px; }
 .privacy { text-align:center; color:#929b97; font-size:10px; margin:20px 0 0; }
 .success { min-height:540px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; animation:rise .45s ease both; }
 .success .check { width:58px; height:58px; display:grid; place-items:center; border-radius:50%; background:#dcece3; color:var(--green); font-size:26px; margin-bottom:24px; }

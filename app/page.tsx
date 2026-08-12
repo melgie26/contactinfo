@@ -74,7 +74,6 @@ export default function Home() {
           <p className="eyebrow">Digital introduction</p>
           <h1>{profile.name}</h1>
           <p className="role">{profile.title}<span> · </span>{profile.organization}</p>
-          <p className="bio">{profile.bio}</p>
           {contextLabel && <p className="context">We connected at <strong>{contextLabel}</strong></p>}
 
           <button className="primary save" type="button" onClick={saveContact}>
@@ -104,6 +103,8 @@ export default function Home() {
               <p className="eyebrow">The other half of the handshake</p>
               <h2>Let’s stay connected.</h2>
               <p className="intro">Send me your name and mobile—everything else is optional.</p>
+              <a className="primary sms-primary" href={`sms:${profile.phone}?&body=${smsBody}`}><span>Text Matt now</span><span>↗</span></a>
+              <div className="divider form-divider"><span>or share your details below</span></div>
 
               <form onSubmit={submit} autoComplete="on">
                 <div className="field">
@@ -143,8 +144,6 @@ export default function Home() {
                 {status === "error" && <p className="error" role="alert">That didn’t go through. Please try again or text Matt instead.</p>}
                 <button className="primary" type="submit" disabled={status === "sending"}>{status === "sending" ? "Sending…" : "Send my contact"}<span>→</span></button>
               </form>
-              <div className="divider"><span>or</span></div>
-              <a className="sms" href={`sms:${profile.phone}?&body=${smsBody}`}>Text me instead <span>↗</span></a>
               <p className="privacy">Your details go directly to Matt and are never shared. Include an email to receive one brief acknowledgment.</p>
             </>
           )}

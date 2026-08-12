@@ -21,7 +21,6 @@
         <p class="eyebrow">Digital introduction</p>
         <h1>Matt Elgie</h1>
         <p class="role">President <span>·</span> Airdrie Professional Firefighters Association</p>
-        <p class="bio">Building stronger connections across the fire service, organized labor, and the communities we serve.</p>
         <p id="context" class="context" hidden></p>
         <a class="primary save" href="matt-elgie.vcf" download="Matt-Elgie.vcf"><span class="button-icon">+</span> Save Matt’s contact</a>
         <nav class="links" aria-label="Matt's professional links">
@@ -34,6 +33,8 @@
         <section id="form-view">
           <p class="eyebrow">The other half of the handshake</p><h2>Let’s stay connected.</h2>
           <p class="intro">Send me your name and mobile—everything else is optional.</p>
+          <a id="sms" class="primary sms-primary" href="sms:+14036194908"><span>Text Matt now</span><span>↗</span></a>
+          <div class="divider form-divider"><span>or share your details below</span></div>
           <form id="contact-form" autocomplete="on">
             <div class="field"><label for="fullName">Your name</label><input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="First and last name" required></div>
             <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(555) 555-1234" required></div>
@@ -49,8 +50,6 @@
             <p id="error" class="error" role="alert" hidden></p>
             <button id="submit" class="primary" type="submit">Send my contact <span>→</span></button>
           </form>
-          <div class="divider"><span>or</span></div>
-          <a id="sms" class="sms" href="sms:+14036194908">Text me instead <span>↗</span></a>
           <p class="privacy">Your details go directly to Matt and are never shared. Include an email to receive one brief acknowledgment.</p>
         </section>
         <section id="success-view" class="success" hidden role="status" aria-live="polite">
