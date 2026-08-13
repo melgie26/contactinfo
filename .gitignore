@@ -36,6 +36,7 @@ yarn-error.log*
 *.vcf
 !public/*.vcf
 !docs/*.vcf
+!docs/cards/**/*.vcf
 
 # vercel
 .vercel
