@@ -12,7 +12,7 @@ main { min-height:100svh; padding:38px 18px 22px; position:relative; overflow:hi
 .card { width:min(100%,1040px); background:var(--panel); border:1px solid rgba(255,255,255,.9); box-shadow:0 30px 90px rgba(16,43,89,.14),0 2px 8px rgba(16,43,89,.05); backdrop-filter:blur(22px); border-radius:32px; overflow:hidden; display:grid; grid-template-columns:.9fr 1.1fr; position:relative; }
 .identity,.exchange { padding:58px; }
 .identity { background:linear-gradient(145deg,#102b59 0%,#173b78 68%,#24539b 145%); color:#fff; display:flex; flex-direction:column; border-top:5px solid #f4bb2a; position:relative; isolation:isolate; overflow:hidden; }
-.identity::before { content:""; position:absolute; z-index:-1; width:470px; height:470px; right:-155px; bottom:-70px; background:url("iaff-alberta-logo.png?v=1") center/contain no-repeat; opacity:.15; filter:grayscale(1) contrast(1.08); mix-blend-mode:screen; transform:rotate(-7deg); pointer-events:none; }
+.identity::before { content:""; position:absolute; z-index:-1; width:470px; height:470px; right:-155px; bottom:-70px; background:url("iaff-alberta-logo.png?v=2") center/contain no-repeat; opacity:.15; filter:grayscale(1) contrast(1.08); mix-blend-mode:screen; transform:rotate(-7deg); pointer-events:none; }
 .identity::after { content:""; position:absolute; z-index:-1; inset:0; background:linear-gradient(180deg,transparent 35%,rgba(20,18,19,.14) 100%); pointer-events:none; }
 .identity-top { display:flex; align-items:flex-start; margin-bottom:42px; }
 .portrait-wrap { width:120px; height:120px; position:relative; flex:0 0 auto; }
