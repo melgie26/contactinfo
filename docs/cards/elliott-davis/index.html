@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102b59">
+  <meta name="generator" content="Elliott Davis Digital Contact Card">
+  <title>Elliott Davis | Let’s Connect</title>
+  <meta name="description" content="Save Elliott’s contact and share yours by text in seconds.">
+  <meta property="og:title" content="Elliott Davis | Let’s Connect">
+  <meta property="og:description" content="Save Elliott’s contact and share yours by text in seconds.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <main>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <section class="card" aria-label="Elliott Davis digital business card">
+      <div class="identity">
+        <div class="identity-top">
+          <div class="portrait-wrap"><img class="portrait" src="elliott-davis.jpg?v=1" alt="Elliott Davis headshot"><span class="available" title="Open to connecting"></span></div>
+        </div>
+        <p class="eyebrow">Digital introduction</p>
+        <h1>Elliott Davis</h1>
+        <p class="role">President <span>·</span> IAFF Alberta</p>
+        <p id="context" class="context" hidden></p>
+        <a class="primary save" href="elliott-davis.vcf" download="Elliott-Davis.vcf"><span class="button-icon">+</span> Save Elliott’s contact</a>
+        <nav class="links" aria-label="Elliott's contact links">
+          <a href="tel:+17809992176">Call</a>
+          <a href="mailto:elliot.davis@apffpa.ca">Email</a>
+          <a href="https://www.linkedin.com/in/elliott-davis-290a48312/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.apffpa.ca/" target="_blank" rel="noreferrer">Website</a>
+        </nav>
+      </div>
+      <div class="exchange">
+        <section id="form-view">
+          <p class="eyebrow">The other half of the handshake</p>
+          <h2>Let’s stay connected.</h2>
+          <p class="intro">Enter your details and your phone will prepare a text to Elliott. You’ll review it before sending.</p>
+          <a id="quick-text" class="primary sms-primary" href="sms:+17809992176"><span>Text Elliott now</span><span>↗</span></a>
+          <div class="divider form-divider"><span>or build a contact text</span></div>
+          <form id="contact-form" autocomplete="on">
+            <div class="field"><label for="fullName">Your name</label><input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="First and last name" required></div>
+            <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(555) 555-1234" required></div>
+            <div class="field"><label for="email">Email <span>Optional</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field"><label for="notes">Note <span>Optional</span></label><textarea id="notes" name="notes" rows="3" placeholder="A quick reminder of where we met"></textarea></div>
+            <button id="optional-toggle" class="optional-toggle" type="button" aria-expanded="false"><span>Add organization or title</span><span>+</span></button>
+            <div id="optional-fields" class="optional-fields" hidden>
+              <div class="split">
+                <div class="field"><label for="organization">Organization <span>Optional</span></label><input id="organization" name="organization" type="text" autocomplete="organization" placeholder="Company or local"></div>
+                <div class="field"><label for="title">Title <span>Optional</span></label><input id="title" name="title" type="text" autocomplete="organization-title" placeholder="Your role"></div>
+              </div>
+            </div>
+            <button class="primary" type="submit">Prepare my text <span>→</span></button>
+          </form>
+          <p class="privacy">Nothing is stored by this website. Your details are placed into a text message on your phone and are shared only when you tap Send.</p>
+        </section>
+      </div>
+    </section>
+    <footer>Made for real-world connections.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
