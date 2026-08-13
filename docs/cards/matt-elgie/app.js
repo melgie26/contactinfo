@@ -44,7 +44,7 @@ form.addEventListener("submit", async event => {
     form.reset();
   } catch (_) {
     error.textContent = "That didn’t go through. Please try again or text Matt instead."; error.hidden = false;
-  } finally { submit.disabled = false; submit.innerHTML = "Send my contact <span>→</span>"; }
+  } finally { submit.disabled = false; submit.innerHTML = "Text this info to Matt <span>→</span>"; }
 });
 
 document.querySelector("#send-another").addEventListener("click", () => {
