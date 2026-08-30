@@ -6,6 +6,8 @@ Static, mobile-first demo landing page for Gemini Woodworking. It has no databas
 
 - Instagram: https://www.instagram.com/geminiwoodworking/
 - Maker name: Daniel Sowerby
+- Phone: +1 403-650-5650 (supplied for this demo)
+- Email: dan.sowerby@gmail.com (supplied for this demo)
 - Alberta/Calgary-area context
 - Handcrafted cribbage boards, charcuterie boards, custom commissions, magnetic peg holders, and the woods canary, olive, maple, and cedar
 - Product images and maker quotation are sourced from the public Instagram profile
@@ -18,7 +20,7 @@ Static, mobile-first demo landing page for Gemini Woodworking. It has no databas
 
 ## Intentionally omitted
 
-No phone number, email address, price list, street address, or standalone website was publicly verified. The page routes inquiries to the verified Instagram account.
+No price list, street address, or standalone website was verified. The page provides direct SMS, email, contact-save, and Instagram actions.
 
 ## Publishing
 
