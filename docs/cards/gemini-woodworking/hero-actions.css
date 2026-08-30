@@ -1,0 +1,35 @@
+.actions {
+  gap: 10px;
+}
+
+.text-primary {
+  grid-column: 1 / -1;
+  min-height: 62px;
+  background: var(--pine);
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 12px 28px rgba(33, 61, 45, 0.2);
+}
+
+.inverse {
+  min-height: 48px;
+  border: 1px solid var(--pine);
+  background: transparent;
+  color: var(--pine);
+  font-size: 12px;
+}
+
+.save-contact {
+  display: inline-block;
+  margin-top: 16px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(29, 42, 33, 0.45);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .text-primary {
+    grid-column: auto;
+  }
+}
